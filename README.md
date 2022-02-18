@@ -93,5 +93,5 @@ Verifica se o tamanho da senha é menor que 6, caso sim, retorna o número de ca
 ```
 <b>Explicação:</b>
 
-Para cada variavel o método <code>test()</code> executa uma busca por uma correspondência entre uma expressão regular e uma string. Retorna <code>true</code> ou <code>false</code>.
+Para cada string o método <code>test()</code> executa uma busca por uma correspondência entre uma expressão regular e uma string. Retorna <code>true</code> ou <code>false</code>.
 Se a senha atender todos os requisitos, retorna a mensagem "Senha atende aos requisitos".
