@@ -7,7 +7,7 @@
 
 Criado uma função anônima cujo nome é escada, no qual recebe um parâmetro.
 
-let escada = function(n) {
+<code>let escada = function(n) {
     let array = [];
     for (let i = 0; i < n; i++) {
         array.push("*".repeat(i)); 
@@ -15,12 +15,12 @@ let escada = function(n) {
     for (const valor of array) {
         console.log(valor.padStart(n, " ")); 
     }
-}
+}</code>
 
 <b>Parte um do código:</b>
 
-for (let i = 0; i < n; i++) {
-        array.push("*".repeat(i));
+<code>for (let i = 0; i < n; i++) {
+        array.push("*".repeat(i));</code>
     
 <b>Explicação:</b> 
 
