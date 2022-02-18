@@ -78,10 +78,18 @@ Verifica se o tamanho da senha é menor que 6, caso sim, retorna o número de ca
 <b>Parte dois do código:</b>
 
 ```js
-let maiusculo = /[A-Z]/.test(senha);
-let minusculo = /[a-z]/.test(senha);
-let caractereEspecial = /[^a-zA-Z 0-9]+/g.test(senha);
-let digito = /[0-9]/.test(senha);
+} else {
+        let maiusculo = /[A-Z]/.test(senha);
+        let minusculo = /[a-z]/.test(senha);
+        let caractereEspecial = /[^a-zA-Z 0-9]+/g.test(senha);
+        let digito = /[0-9]/.test(senha);
+        if (maiusculo && minusculo && digito && caractereEspecial){
+            return 'Senha atende aos requisitos';
+        } else {
+            return senhaFraca;
+        }
+    } 
+}
 ```
 <b>Explicação:</b>
 
