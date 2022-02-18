@@ -65,4 +65,25 @@ let cadastro = function(senha){
     } 
 }
 ```
-    
+<b>Parte um do código:</b>
+```js
+if (tamanhoSenha < 6){
+        let menorQueSeis = 6 - tamanhoSenha;
+        return menorQueSeis;
+```
+<b>Explicação:</b>
+
+Verifica se o tamanho da senha é menor que 6, caso sim, retorna o número de caracter necessário para ser adicionado a senha a fim de tornar mais segura. 
+
+<b>Parte dois do código:</b>
+
+```js
+let maiusculo = /[A-Z]/.test(senha);
+let minusculo = /[a-z]/.test(senha);
+let caractereEspecial = /[^a-zA-Z 0-9]+/g.test(senha);
+let digito = /[0-9]/.test(senha);
+```
+<b>Explicação:</b>
+
+Para cada variavel o método test() executa uma busca por uma correspondência entre uma expressão regular e uma string. Retorna <code>true</code> ou <code>false</code>.
+Se a senha atender todos os requisitos, retorna a mensagem "Senha atende aos requisitos".
