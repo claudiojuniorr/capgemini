@@ -7,7 +7,8 @@
 
 Criado uma função anônima cujo nome é escada, no qual recebe um parâmetro.
 
-<code>let escada = function(n) {
+```js
+let escada = function(n) {
     let array = [];
     for (let i = 0; i < n; i++) {
         array.push("*".repeat(i)); 
@@ -15,23 +16,24 @@ Criado uma função anônima cujo nome é escada, no qual recebe um parâmetro.
     for (const valor of array) {
         console.log(valor.padStart(n, " ")); 
     }
-}</code>
+}
+```
 
 <b>Parte um do código:</b>
-
-<code>for (let i = 0; i < n; i++) {
-        array.push("*".repeat(i));</code>
-    
+```js
+for (let i = 0; i < n; i++) {
+        array.push("*".repeat(i));
+```
 <b>Explicação:</b> 
 
 Para cada valor da range(0, n) o método repeat() irá construir e retorna uma nova string com um determinado número de cópias concatenadas do caracter '*'. 
 Retornado a nova string, o método push() irá adicionar o elemento no array.
 
 <b>Parte dois do código:</b>
-
+```js
 for (const valor of array) {
         console.log(valor.padStart(n, " ")); 
-        
+```        
 <b>Explicação:</b>
 
 Para cada valor do array, o método padStart() irá adicionar antes do caracter '*' um espaço vazio.
@@ -39,7 +41,7 @@ Para cada valor do array, o método padStart() irá adicionar antes do caracter 
 <h3><b>Questão 2</b></h3>
 
 Criado uma função anônima cujo nome é cadastro, no qual recebe uma string como parâmetro.
-
+```js
 let cadastro = function(senha){
     let tamanhoSenha= senha.length;
     const senhaFraca =    `Senha Fraca:
@@ -62,5 +64,5 @@ let cadastro = function(senha){
         }
     } 
 }
-
+```
     
