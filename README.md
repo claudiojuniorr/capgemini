@@ -26,8 +26,8 @@ for (let i = 0; i < n; i++) {
 ```
 <b>Explicação:</b> 
 
-Para cada valor da range(0, n) o método repeat() irá construir e retorna uma nova string com um determinado número de cópias concatenadas do caracter '*'. 
-Retornado a nova string, o método push() irá adicionar o elemento no array.
+Para cada valor da range(0, n) o método <code>repeat()</code> irá construir e retorna uma nova string com um determinado número de cópias concatenadas do caracter '*'. 
+Retornado a nova string, o método <code>push()</code> irá adicionar o elemento no array.
 
 <b>Parte dois do código:</b>
 ```js
@@ -36,7 +36,7 @@ for (const valor of array) {
 ```        
 <b>Explicação:</b>
 
-Para cada valor do array, o método padStart() irá adicionar antes do caracter '*' um espaço vazio.
+Para cada valor do array, o método <code>padStart()</code> irá adicionar antes do caracter '*' um espaço vazio.
 
 <h3><b>Questão 2</b></h3>
 
@@ -85,5 +85,5 @@ let digito = /[0-9]/.test(senha);
 ```
 <b>Explicação:</b>
 
-Para cada variavel o método test() executa uma busca por uma correspondência entre uma expressão regular e uma string. Retorna <code>true</code> ou <code>false</code>.
+Para cada variavel o método <code>test()</code> executa uma busca por uma correspondência entre uma expressão regular e uma string. Retorna <code>true</code> ou <code>false</code>.
 Se a senha atender todos os requisitos, retorna a mensagem "Senha atende aos requisitos".
