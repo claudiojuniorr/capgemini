@@ -1,9 +1,9 @@
-# capgemini
-<h1><b>DESAFIO DE PROGRAMAÇÃO - ACADEMIA CAPGEMINI</b></h1>
+<h1>Capgemini</h2>
+<h2><b>DESAFIO DE PROGRAMAÇÃO - ACADEMIA CAPGEMINI</b></h2>
 
 <b>A resolução das questões foram feitas na linguagem JavaScript.</b>
 
-<h2><b>Questão 1</b></h2>
+<h3><b>Questão 1</b></h3>
 
 Criado uma função anônima cujo nome é escada, no qual recebe um parâmetro.
 
@@ -36,7 +36,7 @@ for (const valor of array) {
 
 Para cada valor do array, o método padStart() irá adicionar antes do caracter '*' um espaço vazio.
 
-<h2><b>Questão 2</b></h2>
+<h3><b>Questão 2</b></h3>
 
 Criado uma função anônima cujo nome é cadastro, no qual recebe uma string como parâmetro.
 
