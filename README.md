@@ -38,6 +38,19 @@ for (const valor of array) {
 
 Para cada valor do array, o método <code>padStart()</code> irá adicionar antes do caracter '*' um espaço vazio.
 
+<b>Entrada:</b>
+```js
+escada(6)
+```
+
+<b>Saída:</b>
+<code>
+     *
+    **
+   ***
+  ****
+ *****
+</code>
 <h3><b>Questão 2</b></h3>
 
 Criado uma função anônima cujo nome é cadastro, no qual recebe uma string como parâmetro.
@@ -95,3 +108,34 @@ Verifica se o tamanho da senha é menor que 6, caso sim, retorna o número de ca
 
 Para a senha inserida o método <code>test()</code> executa uma busca por uma correspondência entre uma expressão regular e uma string. Retorna <code>true</code> ou <code>false</code>.
 Se a senha atender todos os requisitos, retorna a mensagem "Senha atende aos requisitos".
+
+<b>Entrada 1:</b>
+```js
+console.log(cadastro('asd'));
+```
+
+<b>Saída 1:</b>
+
+<code>3</code>
+
+<b>Entrada 2:</b>
+```js
+console.log(cadastro('adwrsd'));
+```
+
+<b>Saída 2:</b>
+
+<code>Senha Fraca:
+    Adicione pelo menos 1 letra minúscula.
+    Adicione pelo menos 1 letra maiúscula.
+    Adicione pelo menos 1 dígito.
+    Adicione pelo menos 1 caracter especial. Os caracteres especiais são: !@#$%^&*()-+</code>
+    
+ <b>Entrada 3:</b>
+```js
+console.log(cadastro('A#3rsd'));
+```
+
+<b>Saída 3:</b>
+
+<code>Senha atende aos requisitos</code>
