@@ -69,6 +69,7 @@ console.log(cadastro('adwrsd'));
 ```
 
 <b>Saída 2:</b>
+
 Senha Fraca: <br />
     Adicione pelo menos 1 letra minúscula. <br />
     Adicione pelo menos 1 letra maiúscula. <br />
