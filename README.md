@@ -44,13 +44,13 @@ escada(6)
 ```
 
 <b>Saída:</b>
-
+<br>
      *
     **
    ***
   ****
  *****
-
+</br>
 <h3><b>Questão 2</b></h3>
 
 Criado uma função anônima cujo nome é cadastro, no qual recebe uma string como parâmetro.
@@ -124,13 +124,13 @@ console.log(cadastro('adwrsd'));
 ```
 
 <b>Saída 2:</b>
-
+<br>
 Senha Fraca:
     Adicione pelo menos 1 letra minúscula.
     Adicione pelo menos 1 letra maiúscula.
     Adicione pelo menos 1 dígito.
     Adicione pelo menos 1 caracter especial. Os caracteres especiais são: !@#$%^&*()-+
-    
+</br>    
  <b>Entrada 3:</b>
 ```js
 console.log(cadastro('A#3rsd'));
