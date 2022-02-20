@@ -31,40 +31,15 @@ escada(6)
 
 <b>Saída:</b>
 
-     *  <P>
-    ** <P>
-   *** <P>
-  **** <P>
- ***** <P>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</p>  
+<p>&nbsp;&nbsp;&nbsp;&nbsp;**</p>  
+<p>&nbsp;&nbsp;&nbsp;***</p>   
+<p>&nbsp;&nbsp;****</p>   
+<p>&nbsp;*****</p>   
 
 <h3><b>Questão 2</b></h3>
 
-Criado uma função anônima cujo nome é cadastro, no qual recebe uma string como parâmetro.
-```js
-let cadastro = function(senha){
-    let tamanhoSenha= senha.length;
-    const senhaFraca =    `Senha Fraca:
-    Adicione pelo menos 1 letra minúscula.
-    Adicione pelo menos 1 letra maiúscula.
-    Adicione pelo menos 1 dígito.
-    Adicione pelo menos 1 caracter especial. Os caracteres especiais são: !@#$%^&*()-+`;
-    if (tamanhoSenha < 6){
-        let menorQueSeis = 6 - tamanhoSenha;
-        return menorQueSeis;
-    } else {
-        let maiusculo = /[A-Z]/.test(senha);
-        let minusculo = /[a-z]/.test(senha);
-        let caractereEspecial = /[^a-zA-Z 0-9]+/g.test(senha);
-        let digito = /[0-9]/.test(senha);
-        if (maiusculo && minusculo && digito && caractereEspecial){
-            return 'Senha atende aos requisitos';
-        } else {
-            return senhaFraca;
-        }
-    } 
-}
-```
-<b>Parte um do código:</b>
+<b>Verificação do tamanho da senha:</b>
 ```js
 if (tamanhoSenha < 6){
         let menorQueSeis = 6 - tamanhoSenha;
@@ -74,25 +49,9 @@ if (tamanhoSenha < 6){
 
 Verifica se o tamanho da senha é menor que 6, caso sim, retorna o número de caracter necessário para ser adicionado a senha a fim de tornar mais segura. 
 
-<b>Parte dois do código:</b>
+<b>Verificação da senha:</b>
 
-```js
-} else {
-        let maiusculo = /[A-Z]/.test(senha);
-        let minusculo = /[a-z]/.test(senha);
-        let caractereEspecial = /[^a-zA-Z 0-9]+/g.test(senha);
-        let digito = /[0-9]/.test(senha);
-        if (maiusculo && minusculo && digito && caractereEspecial){
-            return 'Senha atende aos requisitos';
-        } else {
-            return senhaFraca;
-        }
-    } 
-}
-```
-<b>Explicação:</b>
-
-Para a senha inserida o método <code>test()</code> executa uma busca por uma correspondência entre uma expressão regular e uma string. Retorna <code>true</code> ou <code>false</code>.
+Para a senha inserida é verificado se contém letra maiúscula, minúscula, dígito e caractes especiais. 
 Se a senha atender todos os requisitos, retorna a mensagem "Senha atende aos requisitos".
 
 <b>Entrada 1:</b>
@@ -102,13 +61,12 @@ console.log(cadastro('asd'));
 
 <b>Saída 1:</b>
 
-<code>3</code>
+3
 
 <b>Entrada 2:</b>
 ```js
 console.log(cadastro('adwrsd'));
 ```
-
 
 <b>Saída 2:</b>
 Senha Fraca: <br />
@@ -124,4 +82,20 @@ console.log(cadastro('A#3rsd'));
 
 <b>Saída 3:</b>
 
-<code>Senha atende aos requisitos</code>
+Senha atende aos requisitos
+
+<h3><b>Questão 3</b></h3>
+
+Para verificar o número de anagramas de uma palavra foi necessário desenvolver duas funções a fim de realizar a permutação simples e com repetição. A partir desses dois cálculos foi permitido chegar ao resultado de números de anagramas possíveis. A função <code>caracterDuplicado()</code> verifica a repetição de caracteres de uma string a fim de descobrirmos o número de permutações com repetições, enquanto a função <code>fatorial()</code> retorna o número de permutações simples.
+
+Após a realização dos cálculos é verificado em qual condição a string passada como parâmetro se encaixa e depois é adicionado cada carctere da string no arrayCaracter, a partir dessa array é chamado a função <code>arrayRandomizado()</code> que irá retornar o array com aleatoriedade, posto isso os elementos são concatenados e adicionado ao arrayAnagrama, para cada elemento que será adicionado dentro do arrayAnagrama é verificado se já existe a fim de evitar substrings repetidas.
+
+ <b>Entrada 1:</b>
+ 
+ ```js
+console.log(retornaAnagrama('ovo'))
+```
+
+<b>Saída 1:</b>
+
+2
