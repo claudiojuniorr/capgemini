@@ -31,11 +31,11 @@ escada(6)
 
 <b>Saída:</b>
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* 
-&nbsp;&nbsp;&nbsp;&nbsp;**  
-&nbsp;&nbsp;&nbsp;***   
-&nbsp;&nbsp;****   
-&nbsp;*****</p>   
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</p>    
+<p>&nbsp;&nbsp;&nbsp;&nbsp;**</p>     
+<p>&nbsp;&nbsp;&nbsp;***</p>      
+<p>&nbsp;&nbsp;****</p>      
+<p>&nbsp;*****</p>   
 
 <h3><b>Questão 2</b></h3>
 
