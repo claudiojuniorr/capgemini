@@ -5,21 +5,7 @@
 
 <h3><b>Questão 1</b></h3>
 
-Criado uma função anônima cujo nome é escada, no qual recebe um parâmetro.
-
-```js
-let escada = function(n) {
-    let array = [];
-    for (let i = 0; i < n; i++) {
-        array.push("*".repeat(i)); 
-    }
-    for (const valor of array) {
-        console.log(valor.padStart(n, " ")); 
-    }
-}
-```
-
-<b>Parte um do código:</b>
+<b>Adicionando elementos no array:</b>
 ```js
 for (let i = 0; i < n; i++) {
         array.push("*".repeat(i));
@@ -29,7 +15,7 @@ for (let i = 0; i < n; i++) {
 Para cada valor da range(0, n) o método <code>repeat()</code> irá construir e retorna uma nova string com um determinado número de cópias concatenadas do caracter '*'. 
 Retornado a nova string, o método <code>push()</code> irá adicionar o elemento no array.
 
-<b>Parte dois do código:</b>
+<b>Retornando os elementos do array:</b>
 ```js
 for (const valor of array) {
         console.log(valor.padStart(n, " ")); 
@@ -45,11 +31,11 @@ escada(6)
 
 <b>Saída:</b>
 
-<br> * 
-    **
-   *** 
-  **** 
- ***** <br/>
+     *  <P>
+    ** <P>
+   *** <P>
+  **** <P>
+ ***** <P>
 
 <h3><b>Questão 2</b></h3>
 
